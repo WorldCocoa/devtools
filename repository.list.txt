@@ -1,0 +1,4 @@
+git@github.com:GlobAllomeTree/docker-ubuntu-base.git
+git@github.com:GlobAllomeTree/GlobAllomeTree.git
+git@github.com:GlobAllomeTree/docker-postgresql.git
+git@github.com:GlobAllomeTree/docker-elasticsearch.git

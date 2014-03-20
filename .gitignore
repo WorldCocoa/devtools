@@ -1,0 +1,5 @@
+.vagrant
+GlobAllomeTree
+docker-elasticsearch
+docker-postgresql
+docker-ubuntu-base
