@@ -1,7 +1,7 @@
 devtools
 ========
 
-A repository to help with the developer workflow, testing, and building images
+A repository to help with the developer workflow, testing, and building images for the GlobAllomeTree project
 
 This repository contains all the other required GlobAllomeTree repositories as submodules
 
