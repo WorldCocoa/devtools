@@ -9,12 +9,11 @@ for repository in $(cat repository.list.txt); do
     #If the repository directory does not exist, then clone the repo
     echo "------------------ Cloning repos/${dir_name} --------------------"
     if [ ! -d "repos/${dir_name}" ]; then
-    	mkdir -p repos 
-    	git clone ${repository} repos/${dir_name}
-    	
+        mkdir -p repos 
+        git clone ${repository} repos/${dir_name}
     else
-    	echo "Already cloned"
-	fi
-	echo
+        echo "Already cloned"
+    fi
+    echo
     echo
 done
