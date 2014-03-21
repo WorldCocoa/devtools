@@ -7,7 +7,7 @@ This repository contains a list of other repos to be cloned in repository.list.t
 
 Usage: 
 
-    git@github.com:GlobAllomeTree/devtools.git
+    git clone git@github.com:GlobAllomeTree/devtools.git
     cd devtools
     make git-clone-all
     make git-status-all
