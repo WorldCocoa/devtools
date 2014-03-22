@@ -1,15 +1,18 @@
 
-git-clone-all: 
-	./scripts/git-clone-all.sh
 
-git-status-all:
-	./scripts/git-map.sh status
+############################### Var setup. use Makefile.local to override #################
+# For operators :=  =  ?=  !=  see http://stackoverflow.com/a/448939/420688
 
-git-fetch-all:
-	./scripts/git-map.sh fetch
 
-git-pull-all:
-	./scripts/git-map.sh pull
+############################### Add in helper commands ######################
 
-git-push-all:
-	./scripts/git-map.sh push
+include include.DockerUtils.Makefile
+include include.GitUtils.Makefile
+
+
+############################### Add in commands from child Makefiles ######################
+
+-include repos/docker-postgresql/Makefile
+-include repos/docker-base/Makefile
+
+

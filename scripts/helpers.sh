@@ -9,3 +9,17 @@ repository_directory_name() {
     #${1} is the first argument passed to this function
     echo ${1} | sed 's:.*/::' | sed 's/\.git//' | tr '[:upper:]' '[:lower:]'
 }
+
+
+############################## Colors ##################################
+
+#Usage echo "Output a ${textyellow} coloured ${textreset} ${textred} word ${textreset}."
+textreset=$(tput sgr0) 
+textblack=$(tput setaf 0)
+textred=$(tput setaf 1)
+textgreen=$(tput setaf 2) 
+textyellow=$(tput setaf 3) 
+textblue=$(tput setaf 4)
+textmagenta=$(tput setaf 5)
+textcyan=$(tput setaf 6)
+textwhite=$(tput setaf 7)

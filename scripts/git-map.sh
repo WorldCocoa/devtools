@@ -8,7 +8,7 @@
 #in the repository.list.txt file
 for repository in $(cat repository.list.txt); do
     dir_name=$(repository_directory_name ${repository})
-    echo "------------------ repos/${dir_name} ${1} --------------------"
+    echo "${textblue}------------------ repos/${dir_name} ${textcyan}${1}${textblue} --------------------${textreset}"
     cd repos/${dir_name} && git ${1} && cd ../../
     echo
     echo

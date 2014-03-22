@@ -7,7 +7,7 @@
 for repository in $(cat repository.list.txt); do
     dir_name=$(repository_directory_name ${repository})
     #If the repository directory does not exist, then clone the repo
-    echo "------------------ Cloning repos/${dir_name} --------------------"
+    echo "${textblue}------------------ repos/${dir_name} ${textcyan}clone${textblue} ------------------ ${textreset}" 
     if [ ! -d "repos/${dir_name}" ]; then
         mkdir -p repos 
         git clone ${repository} repos/${dir_name}
