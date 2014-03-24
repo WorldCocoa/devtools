@@ -1,4 +1,4 @@
-# Makefile for managing the GlobAllomeTree docker
+# Makefile for managing the HatPull docker
 
 ############################### Var setup. use Makefile.local to override #################
 # For operators :=  =  ?=  !=  see http://stackoverflow.com/a/448939/420688
