@@ -11,3 +11,6 @@ Usage:
     cd devtools
     make git-clone-all
     make git-status-all
+    #warning - the next line will use apt to install lxc and configure the docker daemon
+    make docker-setup-lxc
+    make base-build

@@ -2,12 +2,15 @@
 ############################################ DOCKER SHORTCUTS ##########################################
 
 docker-stop-all-containers:
-	docker stop `docker ps -notrunc -q`
+	docker stop `docker ps --no-trunc=true -q`
 
 #http://stackoverflow.com/questions/17236796/how-to-remove-old-docker-io-containers
 #TODO: Add a confirm here
-docker-remove-all-containers:
-	docker rm `docker ps -notrunc -a -q`
+docker-remove-stopped-containers:
+	docker rm `docker ps --no-trunc=true -a -q`
+
+docker-remove-all-containers: docker-stop-all-containers
+	docker rm `docker ps --no-trunc=true -a -q`
 
 #http://jimhoskins.com/2013/07/27/remove-untagged-docker-images.html
 #TODO: Add a confirm here
@@ -17,9 +20,9 @@ docker-remove-untagged-images:
 #http://techoverflow.net/blog/2013/10/22/docker-remove-all-images-and-containers/
 #TODO: Add a confirm here
 docker-remove-all-images: 
-	docker rmi $(docker images -q)
+	docker rmi `docker images`
 
-docker-reset: remove-all-containers remove-all-images
+docker-reset: docker-remove-all-containers docker-remove-all-images
 	#other things we can reset?
 
 docker-attach:

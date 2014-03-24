@@ -2,3 +2,4 @@ git@github.com:GlobAllomeTree/docker-base.git
 git@github.com:GlobAllomeTree/GlobAllomeTree.git
 git@github.com:GlobAllomeTree/docker-postgresql.git
 git@github.com:GlobAllomeTree/docker-elasticsearch.git
+git@github.com:GlobAllomeTree/tornado-elasticsearch-proxy.git

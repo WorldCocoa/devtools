@@ -1,2 +1,5 @@
 .vagrant
 repos
+Makefile.local
+*.sql
+*.gz
