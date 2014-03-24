@@ -20,7 +20,7 @@ include include.GitUtils.Makefile
 -include repos/docker-elasticsearch/Makefile
 -include repos/docker-postgresql/Makefile
 -include repos/tornado-elasticsearch-proxy/Makefile
--include repos/globallometree/Makefile 
+-include repos/hatpull/Makefile 
 
 ############################### Global commands for running and initializing app ###########################
 
