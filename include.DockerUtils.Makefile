@@ -26,8 +26,8 @@ docker-reset: docker-remove-all-containers docker-remove-all-images
 	#other things we can reset?
 
 docker-attach:
-	#Example) dock-attach CONTAINER=web_server
-	#Example) make dock-attach CONTAINER=c1997df1e28
+	#Example) docker-attach CONTAINER=web_server
+	#Example) make docker-attach CONTAINER=c1997df1e28
 	sudo lxc-attach -n $(shell sudo docker inspect ${CONTAINER} | grep '"ID"' | sed 's/[^0-9a-z]//g') /bin/bash
 
 docker-setup-lxc:

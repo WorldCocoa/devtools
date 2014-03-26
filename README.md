@@ -14,3 +14,9 @@ Usage:
     #warning - the next line will use apt to install lxc and configure the docker daemon
     make docker-setup-lxc
     make base-build
+    make psql-add-postgres-ubuntu-client
+    make psql-build
+    make elastic-build
+    make es-proxy-build
+    make hatpull-build
+    make run
