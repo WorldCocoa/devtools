@@ -3,5 +3,4 @@ POSTGRESQL_USER = cocoamap
 POSTGRESQL_PASS = cocoamap_secret_pass
 POSTGRESQL_DB   = cocoamap_db_name
 SECRET_KEY = super_secret_key_example
-WEB_SERVER_PORT = 8081
-ELASTICSEARCH_PORT = 9201
+APP_SERVER_PORT = 8081
