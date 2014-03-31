@@ -1,5 +1,3 @@
-git@github.com:HatPull/docker-base.git
-git@github.com:HatPull/HatPull.git
-git@github.com:HatPull/docker-postgresql.git
-git@github.com:HatPull/docker-elasticsearch.git
-git@github.com:HatPull/tornado-elasticsearch-proxy.git
+git@github.com:WorldCocoa/docker-base.git
+git@github.com:WorldCocoa/CocoaMap.git
+git@github.com:WorldCocoa/docker-postgresql.git

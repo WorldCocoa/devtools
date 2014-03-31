@@ -1,4 +1,4 @@
-# Makefile for managing the HatPull docker
+# Makefile for managing the CocoaMap docker
 
 ############################### Var setup. use Makefile.local to override #################
 # For operators :=  =  ?=  !=  see http://stackoverflow.com/a/448939/420688
@@ -17,10 +17,8 @@ include include.GitUtils.Makefile
 ############################### Add in commands from child Makefiles ######################
 
 -include repos/docker-base/Makefile
--include repos/docker-elasticsearch/Makefile
 -include repos/docker-postgresql/Makefile
--include repos/tornado-elasticsearch-proxy/Makefile
--include repos/hatpull/Makefile 
+-include repos/cocoamap/Makefile 
 
 ############################### Global commands for running and initializing app ###########################
 
