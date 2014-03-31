@@ -24,7 +24,7 @@ include include.GitUtils.Makefile
 
 init: psql-init
 
-run: elastic-run psql-run app-server-run
+run: psql-run app-server-run
 
 stop: elastic-stop psql-stop
 
