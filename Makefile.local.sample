@@ -1,7 +1,7 @@
 # Add custom vars in this file - rename it to Makefile.local
-POSTGRESQL_USER = hatpull
-POSTGRESQL_PASS = hatpull_secret_pass
-POSTGRESQL_DB   = hatpull_db_name
+POSTGRESQL_USER = cocoamap
+POSTGRESQL_PASS = cocoamap_secret_pass
+POSTGRESQL_DB   = cocoamap_db_name
 SECRET_KEY = super_secret_key_example
 WEB_SERVER_PORT = 8081
 ELASTICSEARCH_PORT = 9201

@@ -11,10 +11,11 @@ Usage:
     cd devtools
     make git-clone-all
     make git-status-all
-    #warning - the next line will use apt to install lxc and configure the docker daemon
+    # warning - the next line will use apt to install lxc and configure the docker daemon
+    # you will need to be in a virtual machine or on an ubuntu OS to do this step.
     make docker-setup-lxc
     make base-build
     make psql-add-postgres-ubuntu-client
     make psql-build
-    make cocoamap-build
+    make app-server-build
     make run
