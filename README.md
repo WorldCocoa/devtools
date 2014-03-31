@@ -7,6 +7,7 @@ This repository contains a list of other repos to be cloned in repository.list.t
 
 Usage: 
 
+
     git clone git@github.com:CocoaMap/devtools.git
     cd devtools
     make git-clone-all

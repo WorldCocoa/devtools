@@ -26,7 +26,7 @@ docker-reset: docker-remove-all-containers docker-remove-all-images
 	#other things we can reset?
 
 docker-attach:
-	#Example) docker-attach CONTAINER=web_server
+	#Example) docker-attach CONTAINER=postgresql_server
 	#Example) make docker-attach CONTAINER=c1997df1e28
 	sudo lxc-attach -n $(shell sudo docker inspect ${CONTAINER} | grep '"ID"' | sed 's/[^0-9a-z]//g') /bin/bash
 
@@ -35,4 +35,5 @@ docker-setup-lxc:
 	echo "This will install lxc and also change the docker init to use lxc for docker 0.9+"
 	sudo apt-get -y install lxc
 	sudo cp ./scripts/docker.init.sh /etc/init.d/docker
+	sudo cp ./scripts/docker.conf /etc/init/docker.conf
 	sudo service docker restart
