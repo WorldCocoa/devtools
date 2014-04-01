@@ -19,4 +19,9 @@ Usage:
     make psql-add-postgres-ubuntu-client
     make psql-build
     make app-server-build
+    make psql-init  or make psql-reset-db (if db already exists)
     make run
+
+    make app-server-attach
+    cd /opt/code
+    make local-deploy
