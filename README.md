@@ -5,8 +5,40 @@ A repository to help with the developer workflow, testing, and building images f
 
 This repository contains a list of other repos to be cloned in repository.list.txt
 
-Usage: 
 
+Getting a Local Instance Running Quickly
+----------------------------------------
+
+
+get a github account.
+get a index.docker.io account
+give usernames to alex
+Alex adds username to github WorldCocoa organization list.
+install vagrant  (http://www.vagrantup.com/)
+
+create a virtual box
+mkdir cocoamap_project
+git clone git@github.com:WorldCocoa/devtools.git
+cd devtools/
+cp Makefile.local.sample Makefile.local
+make git-clone-all
+vagrant up
+vagrant ssh
+cd devtools
+make docker-setup-lxc
+make psql-add-postgres-ubuntu-client
+make psql-init
+make run
+make app-server-attach
+cd /opt/code
+
+make local-deploy
+
+
+
+
+To Build from Scratch: 
+----------------------
 
     git clone git@github.com:CocoaMap/devtools.git
     cd devtools
