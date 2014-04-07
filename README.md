@@ -15,9 +15,9 @@ get a index.docker.io account
 give usernames to alex
 Alex adds username to github WorldCocoa organization list.
 install vagrant  (http://www.vagrantup.com/)
-
 create a virtual box
 mkdir cocoamap_project
+
 git clone git@github.com:WorldCocoa/devtools.git
 cd devtools/
 cp Makefile.local.sample Makefile.local
@@ -25,9 +25,13 @@ make git-clone-all
 vagrant up
 vagrant ssh
 cd devtools
-make docker-setup-lxc
-make psql-add-postgres-ubuntu-client
-make psql-init
+docker login
+
+# make docker-setup-lxc
+# make psql-add-postgres-ubuntu-client
+# make psql-init
+
+make init
 make run
 make app-server-attach
 cd /opt/code
