@@ -1,6 +1,6 @@
 # Add custom vars in this file - rename it to Makefile.local
 POSTGRESQL_USER = cocoamap
-POSTGRESQL_PASS = cocoamap_secret_pass
-POSTGRESQL_DB   = cocoamap_db_name
+POSTGRESQL_PASS = cocoamap
+POSTGRESQL_DB   = cocoamap
 SECRET_KEY = super_secret_key_example
 APP_SERVER_PORT = 8081

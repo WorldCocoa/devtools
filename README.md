@@ -26,11 +26,6 @@ vagrant up
 vagrant ssh
 cd devtools
 docker login
-
-# make docker-setup-lxc
-# make psql-add-postgres-ubuntu-client
-# make psql-init
-
 make init
 make run
 make app-server-attach

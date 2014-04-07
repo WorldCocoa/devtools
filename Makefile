@@ -22,6 +22,8 @@ include include.GitUtils.Makefile
 
 ############################### Global commands for running and initializing app ###########################
 
+deploy: init run
+
 init: docker-setup-lxc psql-add-postgres-ubuntu-client psql-init
 
 run: psql-run app-server-run
