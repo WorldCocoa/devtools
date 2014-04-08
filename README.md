@@ -6,32 +6,38 @@ A repository to help with the developer workflow, testing, and building images f
 This repository contains a list of other repos to be cloned in repository.list.txt
 
 
-Getting a Local Instance Running Quickly
-----------------------------------------
+Getting a Local Instance Running Quickly from Ubuntu
+----------------------------------------------------
+
+Preparation to build virtual machine from package for windows!
+    get a github account.
+    get a index.docker.io account
+    give usernames and passwwords to alex over skype not email!!
+    install vagrant  (http://www.vagrantup.com/)
+    install virtual box
+
+    download vagrant "box" package from S3
+    place it in a cocoamap_project
+    it should a peer to Vagrantfile.Windows 
+    Vagrantfile.Windows should be renamed to "Vagrantfile"
+
+    use the CMD utility to type the following, when inside that folder.
+    vagrant up
+    vagrant ssh
 
 
-get a github account.
-get a index.docker.io account
-give usernames to alex
-Alex adds username to github WorldCocoa organization list.
-install vagrant  (http://www.vagrantup.com/)
-create a virtual box
-mkdir cocoamap_project
-
-git clone git@github.com:WorldCocoa/devtools.git
-cd devtools/
-cp Makefile.local.sample Makefile.local
-make git-clone-all
-vagrant up
-vagrant ssh
-cd devtools
-docker login
-make init
-make run
-make app-server-attach
-cd /opt/code
-
-make local-deploy
+From an ubuntu prompt:
+    cd ~
+    git clone git@github.com:WorldCocoa/devtools.git
+    cd devtools/
+    cp Makefile.local.sample Makefile.local
+    make git-clone-all
+    cd devtools
+    docker login
+    make deploy
+    make app-server-attach
+    cd /opt/code
+    make local-deploy
 
 
 
