@@ -10,6 +10,7 @@ Getting a Local Instance Running Quickly from Ubuntu
 ----------------------------------------------------
 
 Preparation to build virtual machine from package for windows!
+
     get a github account.
     get a index.docker.io account
     give usernames and passwwords to alex over skype not email!!
@@ -18,8 +19,10 @@ Preparation to build virtual machine from package for windows!
 
     download vagrant "box" package from S3
     place it in a cocoamap_project
-    it should a peer to Vagrantfile.Windows 
-    Vagrantfile.Windows should be renamed to "Vagrantfile"
+
+    make a local file with https://github.com/WorldCocoa/devtools/blob/master/VagrantFile.windows
+    it should a peer to Vagrantfile.windows 
+    Vagrantfile.windows should be renamed to "Vagrantfile"
 
     use the CMD utility to type the following, when inside that folder.
     vagrant up
@@ -27,6 +30,7 @@ Preparation to build virtual machine from package for windows!
 
 
 From an ubuntu prompt:
+
     cd ~
     git clone git@github.com:WorldCocoa/devtools.git
     cd devtools/
