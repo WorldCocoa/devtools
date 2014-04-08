@@ -37,7 +37,7 @@ docker-setup-lxc:
 	sudo sh -c "echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
 	sudo apt-get update
 	sudo apt-get -y install lxc-docker
-	sudo groupadd docker
+	-sudo groupadd docker
 	sudo gpasswd -a ${USER} docker
 	sudo apt-get -y install lxc
 	sudo cp ./scripts/docker.init.sh /etc/init.d/docker
