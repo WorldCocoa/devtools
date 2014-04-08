@@ -32,6 +32,7 @@ docker-attach:
 
 docker-setup-lxc:
 	#Set Docker version 0.9 to use lxc
+	sudo apt-get -y install docker
 	echo "This will install lxc and also change the docker init to use lxc for docker 0.9+"
 	sudo apt-get -y install lxc
 	sudo cp ./scripts/docker.init.sh /etc/init.d/docker
