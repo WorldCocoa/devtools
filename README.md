@@ -9,7 +9,7 @@ This repository contains a list of other repos to be cloned in repository.list.t
 Getting a Local Instance Running Quickly from Ubuntu
 ----------------------------------------------------
 
-Preparation to build virtual machine from package for windows!
+Preparation to build virtual machine from package for Windows
 
     get a github account.
     get a index.docker.io account
