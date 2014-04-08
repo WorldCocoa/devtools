@@ -28,7 +28,7 @@ docker-reset: docker-remove-all-containers docker-remove-all-images
 docker-attach:
 	#Example) docker-attach CONTAINER=postgresql_server
 	#Example) make docker-attach CONTAINER=c1997df1e28
-	sudo lxc-attach -n $(shell sudo docker inspect ${CONTAINER} | grep '"ID"' | sed 's/[^0-9a-z]//g') /bin/bash
+	sudo lxc-attach -n $(shell docker inspect --format='{{.ID}}' ${CONTAINER}) /bin/bash
 
 docker-setup-lxc:
 	#Set Docker version 0.9 to use lxc

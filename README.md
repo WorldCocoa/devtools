@@ -23,19 +23,52 @@ Preparation to build virtual machine from package for Windows
     make a local file with https://github.com/WorldCocoa/devtools/blob/master/VagrantFile.windows
     it should a peer to Vagrantfile.windows 
     Vagrantfile.windows should be renamed to "Vagrantfile"
-
     use the CMD utility to type the following, when inside that folder.
+    vagrant box add -n cocoamap_2014_04_08 cocoamap_2014_04_08.box
     vagrant up
     vagrant ssh
+
+    rm -rf devtools
+    git clone git@github.com:WorldCocoa/devtools.git
+    cp Makefile.local.sample Makefile.local
+    make git-clone-all
+    make run
+
+    browse at 127.0.0.1:8081
 
 
 From an ubuntu prompt:
 
     cd ~
+    sudo apt-get install git
+    git clone git@github.com:WorldCocoa/devtools.git
+    cd devtools/
+    cp Makefile.local.sample Makefile.local
+    sudo apt-get install make
+    make git-clone-all
+    docker login
+    make deploy
+    make app-server-attach
+    cd /opt/code
+    make local-deploy
+
+
+For Server (first time):
+
+    # get git
+    cd ~
+    sudo apt-get install
+    sudo apt-get git
+
+    # create ssh key"""
+    ssh-keygen -t rsa -C "alext@bitbamboo.com"
+
+    # get the files
     git clone git@github.com:WorldCocoa/devtools.git
     cd devtools/
     cp Makefile.local.sample Makefile.local
     make git-clone-all
+
     cd devtools
     docker login
     make deploy
