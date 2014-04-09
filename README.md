@@ -73,6 +73,7 @@ For Server (first time):
     ssh wcf-app
     docker login
     make deploy
+    make host-nginx-setup-app
     make app-server-attach
     cd /opt/code
     make local-deploy
