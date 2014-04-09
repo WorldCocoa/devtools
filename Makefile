@@ -23,7 +23,7 @@ include include.NginxUtils.Makefile
 
 ############################### Global commands for running and initializing app ###########################
 
-deploy: init run
+deploy: init run host-nginx-setup-app
 
 init: docker-setup-lxc psql-add-postgres-ubuntu-client psql-init
 
