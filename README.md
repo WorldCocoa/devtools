@@ -44,7 +44,6 @@ From an ubuntu prompt:
     git clone git@github.com:WorldCocoa/devtools.git
     cd devtools/
     cp Makefile.local.sample Makefile.local
-    sudo apt-get install make
     make git-clone-all
     docker login
     make deploy
@@ -57,7 +56,7 @@ For Server (first time):
 
     # get git
     cd ~
-    sudo apt-get install
+    sudo apt-get update
     sudo apt-get git
 
     # create ssh key"""
@@ -67,9 +66,11 @@ For Server (first time):
     git clone git@github.com:WorldCocoa/devtools.git
     cd devtools/
     cp Makefile.local.sample Makefile.local
+    sudo apt-get install make
     make git-clone-all
-
-    cd devtools
+    make docker-setup-lxc
+    exit #  necessary? hard to tell because groups doesn't return correct result until restart.
+    ssh wcf-app
     docker login
     make deploy
     make app-server-attach
