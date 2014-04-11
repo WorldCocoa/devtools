@@ -40,7 +40,7 @@ Preparation to build virtual machine from package for Windows
 From an ubuntu prompt:
 
     cd ~
-    sudo apt-get install git
+    sudo apt-get install git make
     git clone git@github.com:WorldCocoa/devtools.git
     cd devtools/
     cp Makefile.local.sample Makefile.local
