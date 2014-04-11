@@ -13,6 +13,7 @@ SHELL := /bin/bash
 
 include include.DockerUtils.Makefile
 include include.GitUtils.Makefile
+include include.NginxUtils.Makefile
 
 ############################### Add in commands from child Makefiles ######################
 
@@ -22,7 +23,7 @@ include include.GitUtils.Makefile
 
 ############################### Global commands for running and initializing app ###########################
 
-deploy: init run
+deploy: init run host-nginx-setup-app
 
 init: docker-setup-lxc psql-add-postgres-ubuntu-client psql-init
 
