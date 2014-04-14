@@ -3,3 +3,5 @@ repos
 Makefile.local
 *.sql
 *.gz
+.DS_Store
+*.gz.bak
